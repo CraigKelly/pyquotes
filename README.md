@@ -10,11 +10,15 @@ For now this is hard-coded check for:
 
 ## Installing
 
-You need to install this one using pip from this directory:
+Since this is a pretty personal repo, I usually just install using pip from this directory:
 `pip3 install --user --upgrade .`
+
+However, if you to install without cloning a repo to your drive, you can just:
+`pip install --user git+https://github.com/CraigKelly/pyquotes.git`
 
 If you are hacking on this module, you can also add the `-e` switch to that: 
 `pip3 install --user --upgrade -e .`
+
 
 ## One day it would be nice to:
 
