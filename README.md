@@ -23,7 +23,6 @@ If you are hacking on this module, you can also add the `-e` switch to that:
 ## One day it would be nice to:
 
 * Allow specifying style options
-* Have a real, public github repo
 * Be in PyPI (and so pip installable by name instead of fs location)
 
 ## License
