@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#######################################################################
+# Setup and config
+
+set -e
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PARENT_DIR=$(realpath "$SCRIPT_DIR/..")
+
+cd "$PARENT_DIR"
+
+#######################################################################
+# Actual logic
+
+if [ $# -eq 0 ]; then
+    echo "No arguments provided - will use 'tests/*.py'"
+    python3 -m pylama_quotes.direct tests/*.py
+else
+    echo "Running tests using files on command line"
+    python3 -m pylama_quotes.direct "$@"
+fi
