@@ -14,7 +14,7 @@ Since this is a pretty personal repo, I usually just install using pip from this
 `pip3 install --user --upgrade .`
 
 However, if you to install without cloning a repo to your drive, you can just:
-`pip install --user git+https://github.com/CraigKelly/pyquotes.git`
+`pip3 install --user --upgrade -e git+https://github.com/CraigKelly/pyquotes#egg=pylama_quotes`
 
 If you are hacking on this module, you can also add the `-e` switch to that: 
 `pip3 install --user --upgrade -e .`
