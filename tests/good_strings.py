@@ -28,4 +28,6 @@ CONSTS = [
     rB'ok',
     Rb'ok',
     RB'ok',
+    f'Formatted string',
+    f"Formatted string with '{quoted}'"
 ]

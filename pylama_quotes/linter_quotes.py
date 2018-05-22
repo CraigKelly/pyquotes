@@ -8,7 +8,7 @@ from pylama.lint import Linter as BaseLinter
 def _check(token):
     if token.type != tokenize.STRING:
         return None
-    s = token.string.lstrip('lrubLRUB')  # don't look at prefixes, e.g. r'cc\c' becomes 'cc\c' 
+    s = token.string.lstrip('flrubLRUB')  # don't look at prefixes, e.g. r'cc\c' becomes 'cc\c' 
     if s.startswith('"""'):
         return None  # triple-quote/docstring - using double quotes is OK
     if s.startswith("'") and not s.startswith("'''"):
